@@ -25,11 +25,14 @@ public class TrainingCenter {
     @NotNull(message = "CenterCode Cannot be NULL")
     String centerCode;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
     @NotNull(message = "Address Cannot be NULL")
-    Address address;
+    private Address address;
 
     Integer studentCapacity;
 
+    @ElementCollection
     List<String> coursesOffered;
 
     Long createdOn;
@@ -38,5 +41,4 @@ public class TrainingCenter {
 
     @NotNull(message = "Phone Number Cannot be NULL")
     String contactPhone;
-
 }
