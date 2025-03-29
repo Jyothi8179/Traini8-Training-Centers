@@ -1,7 +1,5 @@
 # Traini8-Training-Centers
 
-# Training Center Management System
-
 ## Overview
 The **Training Center Management System** is a Spring Boot application that provides REST APIs for managing training centers. It includes functionalities for creating, filtering, and retrieving training centers with validation and exception handling.
 
